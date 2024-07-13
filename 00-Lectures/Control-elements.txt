@@ -1,0 +1,40 @@
+Control Elements
+================
+By Default These input field like this input and aslo this select they maintain  their own state inside the DOM. So Basically inside the HTML element itself.
+
+Now This makes it hard to read their values and it also leaves this state  right here  in the DOM , Which for many reasons is not ideal. So in React, we usually  like to keep  all this state in just one central space. So inside the React Application not inside the DOM. 
+
+And so in order to do that we use a technique called controlled elements, with this element It is React who controls and owns the state of these input fields and no longer the DOM.So since we want to keep this data inside the application , what does it mean that we need some state. 
+
+Because the form data changes over time and we also want to maintain  our application in sync with it. 
+
+Benefits of Controlled Elements
+-------------------------------
+Single Source of Truth: The state of the input is managed by the React component, making it easier to keep track of the state of the entire form.
+
+Syncing UI and State: The UI (input field) and the state are always in sync. Any change in the input updates the state, and any state update reflects in the input.
+
+Easier Validation and Submission: Form validation and submission logic can be centralized in the React component, making the code cleaner and more maintainable.
+
+
+State vs Props
+--------------
+State Internal data own by component.  
+Props is External data comes from Parent component.    
+Props like functin Parameters.
+State Component Memory , Hold data of component after multiple rerender.
+Props are read only , can't modified by the component that is recieving.
+update state cause rerender to component.
+Recieving new props cause rerender to component usually when the parent component has been changed.
+ 
+State are used to make component interactive while props are used to configure child component by parent component. 
+
+
+
+
+
+
+
+
+
+

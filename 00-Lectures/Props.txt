@@ -1,0 +1,18 @@
+// Props
+
+ ### Component
+ Component consists of three thing 
+    - Data
+        - Next Data is consists of 
+            - Props
+                - Props are immutable and can control only by parent Component this is used to pass data from parent component to child  components. It can be in form of function, array, object, variable etc.
+                - If we want to mutate the props then we use state
+                - Why props are immutable? Because props are object, so if you change it then it will change also in parent component Because Javascipt work with object like this.
+                - If you change an object that is located outside the component function, That function then  created so-called Side Effect.
+                - Side Function mean when you change data that located outside the current function.
+                ----------------------------------------------------------------------------
+                - React uses ONE_WAY data flow. Data can only be passed from parent to child components, In other words, data can flow from parent to children but never the opposite way. Only from top to bottom of the component tree.  
+            - State
+                - State is controlled by the Component itself. According to the logic of component it chnaged time to time and change the Appearance or ui of the system.
+     - Logic 
+    - UI or Appearance

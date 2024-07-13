@@ -1,0 +1,59 @@
+Thinking in ReactJS
+===================
+
+React Mindstate
+
+Thinking about components , state , data Flow, effects, etc.
+
+Thinking in state Transition , not element mutations. 
+
+
+--------------------------------------------------------------
+
+Build Your desired UI with components , how the establish the component tree and how it's related to each other. 
+
+Build a startic version or React
+
+Think about state:
+__ when to use state,
+__ type of state : local vs Global
+__ Where to place each places or state.
+
+Establish Data Flow:
+__ one way data flow.
+__ chile to parent communication
+__ Accessing Global State
+--------------------------------------------------------------------
+
+State Management:
+=================
+
+
+Local State:
+__ State use by one component or few components
+__ State this defined in a component and only the component and  child component  have access to it (By passing via props)
+
+
+
+Global State (Share State):
+__ State that might need more component in app
+__ that is accessable to every component in the app
+
+
+--------------------------------------------------------------------
+When and Where
+==============
+When
+=====
+Need to store data -> Will data change it some point -NO--> Regular const variable
+		     -YES--> Can be Computed from existing state/props -YES--> Derive State
+		     -No---> Shoud it rerender Component? -NO--> ref(useRef , more on this later)
+		     -YES--> Place a new piece of state in component 
+---------------------------------------------------------------------
+Where		      |
+=====		      |
+		      Only used by this component? -YES--> Leave in component
+		     -No---> Also used by child component -Yes--> Pass to child by props
+		     -No---> Also used by parent component -Yes--> Lifting state up
+
+
