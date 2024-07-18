@@ -9,5 +9,11 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     {/* <App /> */}
     <StarRating />
+    <StarRating
+      size={90}
+      color="red"
+      messages={["Terrible", "Bad", "Okay", "Good", "Amazing"]}
+      defaultRating={3}
+    />
   </React.StrictMode>
 );
