@@ -98,3 +98,7 @@ function DifferentContent() {
     </div>
   );
 }
+
+// * Component -> Component Instances -> React Element -> DOM Element -> User Interface
+
+// ! Rendering is Not Updating Real DOM, Which does not produce visual changes.
