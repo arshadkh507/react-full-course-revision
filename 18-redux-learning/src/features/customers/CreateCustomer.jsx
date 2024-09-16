@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { createCustomer } from "./customerSlice";
+// import { createCustomer } from "./customerSlice";
 
 function CreateCustomer() {
   const [fullName, setFullName] = useState("");
@@ -10,7 +11,7 @@ function CreateCustomer() {
 
   function handleClick() {
     if (!fullName || !nationalId) return alert("please fill the input fields");
-    dispatch(createCustomer(fullName, nationalId));
+    dispatch(createCustomer({ fullName, nationalId }));
   }
 
   return (
